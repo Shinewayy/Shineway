@@ -1,0 +1,59 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#151515;background:#fff;line-height:1.5}
+a{text-decoration:none;color:inherit}
+.topbar{height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 5%;border-bottom:1px solid #eee;background:#fff;position:sticky;top:0;z-index:20}
+.brand{font-size:25px;font-weight:900;letter-spacing:2px}
+nav{display:flex;gap:28px;font-size:15px;font-weight:600}
+nav a:hover{color:#6eaa48}
+.wa-icon{font-size:29px;color:#6eaa48}
+.notice{background:#6faa48;color:#fff;text-align:center;padding:12px;font-size:17px}
+.hero{min-height:560px;background:linear-gradient(120deg,#f3e1c7,#e6bd86);display:flex;align-items:center;justify-content:space-between;padding:60px 9%;overflow:hidden}
+.hero-copy{max-width:560px}
+.eyebrow{font-size:14px;letter-spacing:3px;font-weight:700;margin-bottom:14px}
+.hero h1{font-family:Georgia,serif;font-size:58px;line-height:1.05;margin-bottom:20px}
+.hero p:not(.eyebrow){font-size:19px;max-width:500px;margin-bottom:28px}
+.btn{display:inline-block;background:#6faa48;color:#fff;padding:13px 22px;border-radius:4px;margin:5px;font-weight:700}
+.btn-light{background:#fff;color:#333}
+.hero-bag{width:380px;height:340px;position:relative;margin-right:3%}
+.bag-shape{position:absolute;left:25px;right:25px;bottom:30px;height:210px;background:linear-gradient(135deg,#5b3b25,#a56d38);border-radius:18px 18px 35px 35px;box-shadow:0 25px 35px #0002;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;letter-spacing:2px}
+.bag-shape:before{content:"";position:absolute;width:155px;height:115px;border:12px solid #4c311f;border-bottom:0;border-radius:90px 90px 0 0;top:-105px;left:100px}
+.section{padding:65px 7%;text-align:center}
+.logo-box{width:90px;height:90px;margin:auto;background:linear-gradient(135deg,#ffe3a8,#f4a9d6);display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-size:30px;font-weight:bold}
+h2{font-size:38px;margin:18px 0 8px}
+.intro{color:#666;font-size:18px;margin-bottom:35px}
+.collections{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;max-width:1050px;margin:auto}
+.collection-img{height:220px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:21px;font-weight:800;text-shadow:0 2px 5px #000;background-size:cover}
+.handbag{background:linear-gradient(#0004,#0004),linear-gradient(135deg,#d8c7aa,#7b6955)}
+.sling{background:linear-gradient(#0004,#0004),linear-gradient(135deg,#9e6342,#d5b091)}
+.shoulder{background:linear-gradient(#0004,#0004),linear-gradient(135deg,#b9a6a0,#50474b)}
+.clutch{background:linear-gradient(#0004,#0004),linear-gradient(135deg,#6b3148,#c993a7)}
+.products-section{background:#fafafa}
+.products{max-width:1100px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:left}
+.product{background:#fff;padding-bottom:18px;box-shadow:0 2px 12px #00000012;position:relative}
+.product-img{height:245px;display:flex;align-items:center;justify-content:center;font-size:19px;font-weight:800;color:#fff}
+.p1{background:linear-gradient(135deg,#a58f79,#554438)}
+.p2{background:linear-gradient(135deg,#c38e72,#583a30)}
+.p3{background:linear-gradient(135deg,#b7a69b,#665b55)}
+.p4{background:linear-gradient(135deg,#6b3048,#bd8299)}
+.product h3{font-size:17px;padding:14px 14px 5px}
+.price{font-size:21px;font-weight:800;padding-left:14px}
+.old{padding-left:14px;color:#aaa;text-decoration:line-through}
+.badge{display:inline-block;background:#111;color:#fff;padding:5px 9px;margin:9px 14px;font-size:12px}
+.order{display:block;margin:5px 14px;background:#6faa48;color:#fff;text-align:center;padding:10px;border-radius:4px;font-weight:700}
+.about{max-width:850px;margin:auto}
+.about p{font-size:18px;color:#555}
+.contact{background:#f7f7f7}
+.address{font-size:19px;margin:15px 0 20px}
+.contact-actions{display:flex;justify-content:center;flex-wrap:wrap}
+footer{padding:45px 7%;text-align:center;background:#222;color:#fff}
+footer p{color:#ccc;margin-top:8px}
+.floating-wa{position:fixed;right:18px;bottom:18px;background:#25d366;color:#fff;padding:13px 18px;border-radius:30px;font-weight:800;box-shadow:0 5px 18px #0003;z-index:30}
+@media(max-width:800px){
+  .topbar{height:62px}.brand{font-size:20px}nav{display:none}
+  .hero{min-height:650px;display:block;padding:45px 7%;text-align:center}.hero h1{font-size:43px}.hero-bag{width:300px;height:260px;margin:65px auto 0}.bag-shape{height:165px}.bag-shape:before{left:73px;width:130px;height:95px;top:-85px}
+  .section{padding:48px 5%}h2{font-size:31px}
+  .collections{grid-template-columns:repeat(2,1fr);gap:12px}.collection-img{height:170px;font-size:16px}
+  .products{grid-template-columns:repeat(2,1fr);gap:12px}.product-img{height:190px}.product h3{font-size:15px}
+}
+@media(max-width:430px){.products{grid-template-columns:repeat(2,1fr)}.product-img{height:170px}.hero-copy .btn{display:block;margin:8px auto;width:85%}.floating-wa{right:12px;bottom:12px}}
